@@ -9,5 +9,5 @@
 # 🖥️ Resultado
 <div align="center">
   <img alt="" src="" width="450px">
-  <p>Confira o resultado: <a href="https://-ruuuff.netlify.app">-ruuuff</a></p>
+  <p>Confira o resultado: <a href="https://-ruuuff.netlify.app">Project Name</a></p>
 </div>
