@@ -2,7 +2,7 @@
 
 O projeto consiste em uma UI para verificação, utilizando JavaScript para saltar entre os inputs a cada dígito pressionado e incluindo backspace para retornar. Foi desenvolvido no curso <a href="https://www.udemy.com/share/103Pv2AEcYdFxQQXUH">50 Projects In 50 Days</a>.
 
-Adicionei uma validação de senha no projeto (a senha não é 123456), background para o body e modifiquei as cores utilizadas no projeto original.
+Adicionei uma validação de senha no projeto (a senha não é 123456), a lib <a href="https://github.com/RuuuFF/responsive-adjust">Responsive Adjust</a> para tratar do responsivo, background no body e modifiquei as cores utilizadas no projeto original.
 
 # ✈️ Tecnologias
 
