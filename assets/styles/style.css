@@ -40,6 +40,10 @@ h2 {
   margin-top: 0;
 }
 
+p {
+  line-height: 20px;
+}
+
 h2,
 p {
   color: var(--white);
@@ -49,16 +53,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
-  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .code {
   background: var(--white-low-opacity);
   border-radius: 5px;
-  font-size: 75px;
-  height: 120px;
-  width: 100px;
   border: 1px solid #eeeeee44;
   text-align: center;
   color: var(--white);
@@ -89,16 +89,4 @@ p {
   max-width: 400px;
   color: var(--white);
   border-radius: 5px;
-}
-
-@media (max-width: 600px) {
-  .code-container {
-    flex-wrap: wrap;
-  }
-
-  .code {
-    font-size: 60px;
-    height: 80px;
-    max-width: 70px;
-  }
 }
