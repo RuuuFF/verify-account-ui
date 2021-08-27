@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: rgb(241, 231, 231);
+  --white-low-opacity: rgba(255, 255, 255, 0.1);
+  --white-medium-opacity: rgba(255, 255, 255, 0.4);
+  --green: rgb(34, 238, 91);
+  --red: rgb(206, 40, 40);
+}
+
 body {
-  background-color: #fbfcfe;
+  background: url("https://images.wallpaperscraft.com/image/forest_trees_lake_219355_1920x1080.jpg")
+    no-repeat 50% 50% / cover;
+  object-fit: cover;
   font-family: "Muli", sans-serif;
   height: 100vh;
   margin: 0;
@@ -16,12 +26,23 @@ body {
 }
 
 .container {
-  background-color: #fff;
-  border: 3px solid #000;
+  backdrop-filter: blur(10px);
+  border: 3px solid var(--white);
   border-radius: 10px;
   padding: 30px;
+  margin: 0 20px;
   max-width: 1000px;
   text-align: center;
+  transition: border-color 0.1s ease;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h2,
+p {
+  color: var(--white);
 }
 
 .code-container {
@@ -33,18 +54,24 @@ body {
 }
 
 .code {
+  background: var(--white-low-opacity);
   border-radius: 5px;
   font-size: 75px;
   height: 120px;
   width: 100px;
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee44;
   text-align: center;
+  color: var(--white);
   font-weight: 300;
   -moz-appearance: textfield;
 }
 
+.code::placeholder {
+  color: var(--white-medium-opacity);
+}
+
 .code:valid {
-  border-color: #3498db;
+  border-color: #0095f8;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
 }
 
@@ -55,12 +82,12 @@ body {
 }
 
 .info {
-  background-color: #eaeaea;
+  background-color: var(--white-low-opacity);
   display: inline-block;
   padding: 10px;
   line-height: 20px;
   max-width: 400px;
-  color: #777;
+  color: var(--white);
   border-radius: 5px;
 }
 
